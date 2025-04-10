@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import hotel_list_create
+from .views import get_list_of_hotels, reservation_confirmation
 
 urlpatterns = [
-    path('hotels/', hotel_list_create, name='hotel-list-create'),
+    path('hotels/', get_list_of_hotels, name='getListOfHotels'),
+    path('reserve/', reservation_confirmation, name='reservationConfirmation'),
 ]
